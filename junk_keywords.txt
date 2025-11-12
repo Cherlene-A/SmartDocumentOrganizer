@@ -1,0 +1,6 @@
+offer
+lottery
+discount
+advertisement
+win
+spam

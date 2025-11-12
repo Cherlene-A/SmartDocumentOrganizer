@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>✅ Categorized Results</title>
+    <style>
+        body { font-family: Arial; text-align: center; background-color: #f5f5f5; margin-top: 40px; }
+        table { width: 70%; margin: 0 auto; border-collapse: collapse; background: white; }
+        th, td { padding: 10px; border: 1px solid #ccc; }
+        th { background-color: #007BFF; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        a { text-decoration: none; color: #007BFF; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h2>📂 Categorized Results</h2>
+
+    <table>
+        <tr><th>Filename</th><th>Category</th></tr>
+        {% for file, category in results %}
+            <tr>
+                <td>{{ file }}</td>
+                <td>{{ category }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="/">⬅️ Back</a>
+</body>
+</html>
