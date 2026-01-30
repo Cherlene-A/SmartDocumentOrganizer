@@ -45,6 +45,7 @@ SmartDocumentOrganizer/
 
 1. Clone this repository:
 git clone https://github.com/Cherlene-A/SmartDocumentOrganizer.git
+
 Change directory:
 
 cd SmartDocumentOrganizer
