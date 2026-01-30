@@ -22,14 +22,23 @@ SmartDocumentOrganizer helps you clean up and manage messy document folders by a
 ## 📦 Project Structure
 
 SmartDocumentOrganizer/
+
 ├── categorized/
+
 ├── documents/
+
 ├── static/
+
 ├── templates/
+
 ├── important_keywords.txt
+
 ├── junk_keywords.txt
+
 ├── main.py
+
 ├── requirements.txt
+
 
 ---
 
