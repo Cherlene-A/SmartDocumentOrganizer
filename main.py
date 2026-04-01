@@ -4,7 +4,10 @@ from docx import Document
 import os, shutil, tempfile
 
 app = Flask(__name__)
+UPLOAD_FOLDER = "uploads"
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)   
 
+app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 # --- Load keywords from text files ---
 def load_keywords(filename):
     if not os.path.exists(filename):
@@ -81,11 +84,7 @@ def index():
             return render_template("result.html", results=results)
 
     return render_template("index.html")
-
-if __name__ == "__main__":
-    app.run(debug=True)
-import os
-
+    
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
